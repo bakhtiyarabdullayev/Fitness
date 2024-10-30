@@ -1,0 +1,252 @@
+:root{
+    --light-green: #a1c927;
+    --light-red: #fd634d;
+}
+body{
+    overflow-x: hidden;
+}
+main{
+    width: 100vw;
+}
+.bgag{
+    background-color: #fff;
+}
+.bgyasil{
+    background-color: var(--light-green);
+}
+.bgqirmizi{
+    background-color: var(--light-red);
+}
+.txtag{
+    color: white;
+}
+.txtyasil{
+    color: #a1c927;
+}
+.txtqirmizi{
+    color: #fd634d;
+}
+header{
+    background: url(../img/headerbg.jpg) 55% center/cover;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    position: relative;
+}
+#menu li a{
+    text-transform: uppercase;
+    font: .8em 'Avenir Next Rounded Std', sans-serif;
+}
+nav, #title{
+    position: absolute;
+    width: 100%;
+}
+nav {
+    top: 40px;
+}
+#title{
+    bottom: 16vh;
+    font-family: "Myriad Pro";
+}
+#title h3{
+    word-spacing: 5px;
+}
+#title h1 span{
+    color: var(--light-green);
+}
+#title h3 span{
+    color: var(--light-red);
+}
+#articles{
+    padding: 50px 20px;
+}
+article{
+    padding: 35px 5px;
+    font-family: "Open Sans",sans-serif;
+}
+.fa-solid, .fa-regular{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#articles h3, #articles p{
+    margin-bottom: 30px;
+    line-height: 22px;
+}
+#articles h3{
+    font-size: 1.4rem;
+}
+
+.vh50 { min-height: 50vh }
+
+#fitnessfirst{
+    background: url(../img/fitnessfirst.jpg) center/cover;
+}
+#yourbody{
+    background: url(../img/yourbody.jpg) center/cover;
+}
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover; }
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover; }
+#grape { background: url('../img/grape.jpg') center/cover; }
+#mango { background: url('../img/mango.jpg') center/cover; }
+
+.col33 h2, .col33 h6, .col33 p, .col33 i, .col33 a, .col66 h2, .col66 h6, .col66 p, .col66 i, .col66 a{
+    padding: 15px 10px;
+    line-height: 20px;
+}
+.col33 h6, .col66 h6{
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.col33 h2, .col66 h2{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.col33{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+.col66{
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+}
+.col66 h2, .col66 h6{
+    padding: 30px 0 0 60px;
+}
+.col66 p{
+    padding: 30px 60px 0 60px;
+}
+.col66 h2, .col66 h6, .col33 h2, .col33 h6{
+    text-transform: uppercase;
+}
+
+footer{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/footer-bg.jpg) top/cover;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+#footer1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer1 h2, #footer1 p{
+    padding-bottom: 50px;
+}
+#footer1 h2{
+    font-size: 2rem;
+    font-weight: normal;
+}
+#footer1 p{
+    max-width: 518px;
+}
+#footer2ve3{
+    background-color: #0c1119;
+}
+#footer2{
+    width: 100%;
+    text-align: left;
+}
+.info{
+    width: 70%;
+    margin: auto;
+    padding: 20px 10px;
+    
+}
+.info h6{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.info p{
+    font-size: 0.8em;
+    line-height: 20px;
+}
+.fa-brands{
+    font-size: 2rem;
+    padding-right: 5px;
+}
+#join{
+    padding: 20px;
+}
+#join input, button{
+    height: 50px;
+    padding: 12px;
+    margin: 5px;
+}
+#join button{
+    background-color: var(--light-green);
+}
+
+@media only screen and (min-width: 885px) {
+    header{
+        text-align: initial;
+    }
+    #logo{
+        padding: 40px;
+    }
+    #menu{
+        float: right;
+    }
+    #menu li{
+        display: inline-block;
+        margin-right: 70px;
+    }
+    #title{
+        width: initial;
+        left: 6.3vw;
+    }
+    #title h1{
+        font-size: 2.5em;
+    }
+    #title h3{
+        text-align: right;
+        padding: 5px 15px 0  0;
+    }
+    article{
+        display: inline-block;
+        width: 23%;
+        margin-right: 2%;
+    }
+    article:last-child{
+        margin-right: 0;
+    }
+    .container{
+        max-width: 1180px;
+        margin: auto;
+    }
+    .row::after { 
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .col33 { width: 33.33% }
+    .col66 { width: 66.66% }
+    .fleft { float: left }
+    .fright { float: right }
+
+    #footer1 h2{
+        font-size: 2.5rem;
+    }
+    .info{
+        width: 25%;
+    }
+    #footer2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .info:last-of-type{
+        text-align: center;
+    }
+    #join{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 150px;
+    }
+    #join input:nth-child(2){
+        width: 340px;
+    }
+}
